@@ -8,8 +8,10 @@
 }
 
 .hero-banner {
-  height: clamp(240px, 32vw, 420px);
-  background: url("../img/scouts-grupo.jpg") center/cover no-repeat;
+  height: clamp(280px, 36vw, 520px);
+  background: url("../img/banner-seccoes.jpg") center/contain no-repeat;
+  width: min(1120px, calc(100% - 2 * var(--s-4)));
+  margin-inline: auto;
 }
 
 .hero-grid {
@@ -123,6 +125,14 @@
   margin-top: var(--s-3);
   font-weight: 600;
   color: var(--cne-green-dark);
+}
+
+.card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: var(--s-3);
 }
 
 .section-tag {
