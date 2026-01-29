@@ -1,0 +1,43 @@
+/* assets/css/comunidade.css */
+.site-main {
+  background: linear-gradient(180deg, color-mix(in srgb, var(--cne-cream) 40%, white) 0%, var(--white) 60%);
+}
+
+.page-hero {
+  padding: var(--s-8) 0 var(--s-7);
+}
+
+.hero-grid {
+  display: grid;
+  gap: var(--s-6);
+  align-items: center;
+}
+
+.hero-content h1 {
+  font-size: clamp(2.8rem, 4.2vw, 3.8rem);
+  line-height: 1.1;
+  margin-bottom: var(--s-3);
+}
+
+.hero-content .lead {
+  font-size: clamp(1rem, 2.1vw, 1.15rem);
+  color: var(--muted);
+}
+
+.grid-2 {
+  display: grid;
+  gap: var(--s-5);
+}
+
+.grid-2 a {
+  display: inline-flex;
+  margin-top: var(--s-3);
+  font-weight: 600;
+  color: var(--cne-green-dark);
+}
+
+@media (min-width: 900px) {
+  .grid-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

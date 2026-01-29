@@ -1,0 +1,48 @@
+/* assets/css/tokens.css */
+:root {
+    /* ===== CNE Colors (Manual Identidade) ===== */
+    --cne-green: #2B966C;
+    --cne-green-dark: #1E6042;
+    --cne-red: #BD242C;
+    --cne-cream: #FDF7B9;
+  
+    /* Neutros (para UI) */
+    --ink: #0f172a;
+    --muted: #475569;
+    --line: #e2e8f0;
+    --white: #ffffff;
+  
+    /* ===== Typography ===== */
+    --font-body: "Outfit", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    --font-display: "Brandon Grotesque", "Outfit", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  
+    /* Tamanhos (mobile-first) */
+    --fs-900: clamp(2rem, 3vw, 3rem);     /* H1 */
+    --fs-800: clamp(1.6rem, 2.2vw, 2.2rem); /* H2 */
+    --fs-700: 1.35rem;                    /* H3 */
+    --fs-500: 1rem;                       /* texto */
+    --fs-400: 0.95rem;                    /* pequenos */
+    --lh: 1.6;
+  
+    /* ===== Spacing (escala 4/8) ===== */
+    --s-1: 4px;
+    --s-2: 8px;
+    --s-3: 12px;
+    --s-4: 16px;
+    --s-5: 24px;
+    --s-6: 32px;
+    --s-7: 48px;
+    --s-8: 64px;
+  
+    /* ===== Layout ===== */
+    --container: 1120px;
+    --radius: 16px;
+  
+    /* ===== Shadows ===== */
+    --shadow-sm: 0 6px 18px rgba(15, 23, 42, 0.08);
+    --shadow-md: 0 14px 40px rgba(15, 23, 42, 0.12);
+  
+    /* ===== Transitions ===== */
+    --t: 220ms ease;
+  }
+  

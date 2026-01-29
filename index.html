@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt" data-page="home">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Agrupamento 48 – CNE. Escutismo, atividades e espírito de serviço à comunidade." />
+  <title>Agrupamento 48 – Santa Catarina</title>
+
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css">
+
+
+</head>
+<body class="home">
+
+  <!-- Header / Navegação -->
+  <header class="topbar" role="banner">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Agrupamento 48 – CNE">
+        <img src="assets/img/logo_oficial.png" alt="Agrupamento 48 – CNE" />
+      </a>
+
+      <div class="nav-actions">
+        <div class="social-links" aria-label="Redes sociais">
+          <a href="#" aria-label="Facebook"><i class="ri-facebook-fill" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Instagram"><i class="ri-instagram-line" aria-hidden="true"></i></a>
+          <a href="#" aria-label="YouTube"><i class="ri-youtube-fill" aria-hidden="true"></i></a>
+        </div>
+        <button class="burger" aria-label="Abrir menu" aria-controls="site-menu" aria-expanded="false" onclick="toggleMenu()">
+          <span class="burger-line" aria-hidden="true"></span>
+          <span class="burger-line" aria-hidden="true"></span>
+          <span class="burger-line" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+
+    <nav id="site-menu" class="menu" role="navigation" aria-label="Menu principal" aria-hidden="true">
+      <div class="container menu-inner">
+        <a data-link="comunidade" href="comunidade.html">Comunidade</a>
+        <a data-link="atividades" href="atividades.html">Atividades</a>
+        <a data-link="programa" href="programa.html">Programa</a>
+        <a data-link="rede-acolhe" href="rede-acolhe.html">Rede Acolhe</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="site-main">
+    <section class="section hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1 class="hero-title">
+            <span class="muted">Explora o</span><br />
+            <span class="accent">Escutismo</span>
+          </h1>
+          <p class="lead">
+            Descobre as nossas secções, atividades e calendário. Junta-te ao Agrupamento 48 e vive a aventura com espírito de equipa e serviço.
+          </p>
+          <div class="cta">
+            <a class="btn btn-primary" href="seccoes.html">Saber mais</a>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <img src="assets/img/hero.jpg" alt="Escuteiros em atividade" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="quem-somos">
+      <div class="container">
+        <div class="home-grid">
+          <article class="card">
+            <h3>Quem somos</h3>
+            <p>Conhece a origem do Agrupamento 48 e o percurso que nos trouxe até Santa Catarina.</p>
+          </article>
+          <article class="card">
+            <h3>O que é o escutismo</h3>
+            <p>Um movimento educativo de jovens, para jovens, com base em valores, vida ao ar livre e serviço.</p>
+          </article>
+          <article class="card">
+            <h3>O que é o CNE</h3>
+            <p>O Corpo Nacional de Escutas promove a formação integral dos jovens, em comunidade e em fé.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="arraial">
+      <div class="container">
+        <div class="split">
+          <div class="split-media">
+            <img src="assets/img/arraial-mesas.jpg" alt="Arraial do agrupamento" />
+          </div>
+          <div class="split-content">
+            <div class="section-header">
+              <h2>Arraial</h2>
+              <p>Santos de Santa, o melhor arraial de Lisboa.</p>
+            </div>
+            <p>
+              Um encontro da comunidade com tradição, convívio e apoio às atividades do agrupamento. 
+              Faz a tua reserva com antecedência para garantires lugar.
+            </p>
+            <div class="cta">
+              <a class="btn btn-primary" href="arraial.html">Reserva já a tua mesa</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="open-day">
+      <div class="container">
+        <div class="open-day-grid">
+          <div class="open-day-content">
+            <div class="section-header">
+              <h2>Open Day</h2>
+              <p>Vem conhecer as secções e atividades. Um dia aberto para descobrir o escutismo.</p>
+            </div>
+            <div class="open-day-actions">
+              <button class="btn btn-primary" type="button" data-modal-target="open-day-modal">Participa</button>
+            </div>
+          </div>
+          <div class="open-day-media hero-media">
+            <img src="assets/img/friendship.jpg" alt="Escuteiros em convívio" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="open-day-modal" role="dialog" aria-modal="true" aria-labelledby="open-day-title" aria-hidden="true">
+    <div class="modal-backdrop" data-modal-close></div>
+    <div class="modal-content">
+      <button class="modal-close" type="button" data-modal-close aria-label="Fechar">×</button>
+      <div class="section-header">
+        <h2 id="open-day-title">Formulário Open Day</h2>
+        <p>Preenche os dados do jovem e do encarregado de educação para receberes confirmação.</p>
+      </div>
+      <form class="open-day-form" action="#" method="post">
+        <label>
+          Nome do jovem
+          <input type="text" name="jovem" required />
+        </label>
+        <label>
+          Idade
+          <input type="number" name="idade" min="6" max="22" required />
+        </label>
+        <label>
+          Encarregado de educação
+          <input type="text" name="encarregado" required />
+        </label>
+        <label>
+          Email de contacto
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Telefone
+          <input type="tel" name="telefone" />
+        </label>
+        <label class="full">
+          Observações
+          <textarea name="observacoes" rows="4"></textarea>
+        </label>
+        <button class="btn btn-primary" type="submit">Enviar pedido</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="grid-3">
+        <div>
+          <strong>Agrupamento 48 – CNE</strong>
+          <div class="small muted">Santa Catarina • Misericórdia</div>
+        </div>
+        <div>
+          <div class="small">E-mail: <a href="mailto:geral@exemplo.pt">geral@exemplo.pt</a></div>
+          <div class="small">Morada: Igreja de Santa Catarina, Setúbal</div>
+        </div>
+        <div class="small">© <span id="y"></span> Agrupamento 48. Todos os direitos reservados.<br />Política de Privacidade • Cookies</div>
+      </div>
+    </div>
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  </footer>
+
+  <!-- JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

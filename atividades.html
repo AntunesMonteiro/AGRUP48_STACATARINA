@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Atividades – Agrupamento 48. Atividades nacionais e internacionais." />
+  <title>Atividades – Agrupamento 48</title>
+
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/atividades.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css">
+</head>
+<body>
+  <header class="topbar" role="banner">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Agrupamento 48 – CNE">
+        <img src="assets/img/logo_oficial.png" alt="Agrupamento 48 – CNE" />
+      </a>
+
+      <div class="nav-actions">
+        <div class="social-links" aria-label="Redes sociais">
+          <a href="#" aria-label="Facebook"><i class="ri-facebook-fill" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Instagram"><i class="ri-instagram-line" aria-hidden="true"></i></a>
+          <a href="#" aria-label="YouTube"><i class="ri-youtube-fill" aria-hidden="true"></i></a>
+        </div>
+        <button class="burger" aria-label="Abrir menu" aria-controls="site-menu" aria-expanded="false" onclick="toggleMenu()">
+          <span class="burger-line" aria-hidden="true"></span>
+          <span class="burger-line" aria-hidden="true"></span>
+          <span class="burger-line" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+
+    <nav id="site-menu" class="menu" role="navigation" aria-label="Menu principal" aria-hidden="true">
+      <div class="container menu-inner">
+        <a data-link="comunidade" href="comunidade.html">Comunidade</a>
+        <a data-link="atividades" href="atividades.html">Atividades</a>
+        <a data-link="programa" href="programa.html">Programa</a>
+        <a data-link="rede-acolhe" href="rede-acolhe.html">Rede Acolhe</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="site-main">
+    <section class="section page-hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge">Atividades</div>
+          <h1>Vivemos o escutismo em movimento</h1>
+          <p class="lead">Participamos em iniciativas nacionais e internacionais que reforçam o espírito de equipa e a descoberta.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-2">
+        <article class="card">
+          <h2>Nacionais</h2>
+          <p>Acampamentos, raids e encontros em Portugal que promovem aprendizagem, autonomia e serviço.</p>
+        </article>
+        <article class="card">
+          <h2>Internacionais</h2>
+          <p>Jamborees, intercâmbios e experiências com grupos de outros países.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="grid-3">
+        <div>
+          <strong>Agrupamento 48 – CNE</strong>
+          <div class="small">Santa Catarina • Misericórdia</div>
+        </div>
+        <div>
+          <div class="small">E-mail: <a href="mailto:geral@exemplo.pt">geral@exemplo.pt</a></div>
+          <div class="small">Morada: Igreja de Santa Catarina, Setúbal</div>
+        </div>
+        <div class="small">© <span id="y"></span> Agrupamento 48. Todos os direitos reservados.<br />Política de Privacidade • Cookies</div>
+      </div>
+    </div>
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

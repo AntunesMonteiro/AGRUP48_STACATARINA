@@ -1,0 +1,76 @@
+/* assets/css/programa.css */
+.site-main {
+  background: linear-gradient(180deg, color-mix(in srgb, var(--cne-cream) 40%, white) 0%, var(--white) 60%);
+}
+
+.page-hero {
+  padding: var(--s-8) 0 var(--s-7);
+}
+
+.hero-grid {
+  display: grid;
+  gap: var(--s-6);
+  align-items: center;
+}
+
+.hero-content h1 {
+  font-size: clamp(2.8rem, 4.2vw, 3.8rem);
+  line-height: 1.1;
+  margin-bottom: var(--s-3);
+}
+
+.hero-content .lead {
+  font-size: clamp(1rem, 2.1vw, 1.15rem);
+  color: var(--muted);
+}
+
+.section-header {
+  display: grid;
+  gap: var(--s-2);
+  margin-bottom: var(--s-6);
+  max-width: 700px;
+}
+
+.agenda {
+  display: grid;
+  gap: var(--s-4);
+}
+
+.agenda-item {
+  display: grid;
+  gap: var(--s-4);
+  align-items: center;
+}
+
+.date {
+  width: 72px;
+  height: 72px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  display: grid;
+  place-items: center;
+  background: var(--white);
+  font-weight: 700;
+  color: var(--cne-green-dark);
+}
+
+.day {
+  font-size: 1.4rem;
+}
+
+.month {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: var(--fs-400);
+}
+
+@media (min-width: 900px) {
+  .agenda-item {
+    grid-template-columns: 90px 1fr;
+  }
+}

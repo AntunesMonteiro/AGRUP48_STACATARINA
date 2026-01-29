@@ -1,0 +1,257 @@
+/* assets/css/rede-acolhe.css */
+.site-main {
+  background: linear-gradient(180deg, color-mix(in srgb, var(--cne-cream) 40%, white) 0%, var(--white) 60%);
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.page-hero {
+  padding: var(--s-8) 0 var(--s-7);
+}
+
+.hero-grid {
+  display: grid;
+  gap: var(--s-6);
+  align-items: center;
+}
+
+.hero-content h1 {
+  font-size: clamp(2.6rem, 4vw, 3.6rem);
+  line-height: 1.1;
+  margin-bottom: var(--s-3);
+}
+
+.hero-content .lead {
+  font-size: clamp(1rem, 2.1vw, 1.15rem);
+  color: var(--muted);
+}
+
+.hero-note {
+  margin-top: var(--s-4);
+  font-weight: 600;
+  color: var(--cne-green-dark);
+}
+
+.hero-actions {
+  margin-top: var(--s-5);
+}
+
+.hero-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: var(--s-5);
+  box-shadow: var(--shadow-sm);
+}
+
+.hero-card ul {
+  margin: var(--s-3) 0 0;
+  padding-left: var(--s-5);
+}
+
+.section-header {
+  display: grid;
+  gap: var(--s-2);
+  margin-bottom: var(--s-6);
+  max-width: 700px;
+}
+
+.grid-2,
+.grid-3 {
+  display: grid;
+  gap: var(--s-5);
+}
+
+.steps {
+  display: grid;
+  gap: var(--s-3);
+  padding-left: var(--s-6);
+  margin: 0;
+}
+
+.steps-wrap {
+  display: grid;
+  gap: var(--s-5);
+  align-items: center;
+}
+
+.steps-action {
+  justify-content: center;
+}
+
+.pricing {
+  text-align: center;
+}
+
+.price {
+  font-size: clamp(2.2rem, 3vw, 2.8rem);
+  color: var(--cne-green);
+  margin: 0 0 var(--s-1);
+  font-weight: 700;
+}
+
+.note {
+  margin-top: var(--s-5);
+  padding: var(--s-4);
+  border-left: 4px solid var(--cne-green);
+  background: color-mix(in srgb, var(--cne-green) 8%, white);
+}
+
+.contact-card {
+  display: grid;
+  gap: var(--s-4);
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: var(--s-5);
+  z-index: 200;
+}
+
+.modal.is-open {
+  display: flex;
+}
+
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+}
+
+.modal-content {
+  position: relative;
+  z-index: 1;
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: var(--s-6);
+  width: min(720px, 92vw);
+  max-height: 86vh;
+  overflow: auto;
+  box-shadow: var(--shadow-md);
+}
+
+.modal-close {
+  position: absolute;
+  top: var(--s-4);
+  right: var(--s-4);
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--white);
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.reserve-form {
+  display: grid;
+  gap: var(--s-4);
+}
+
+.reserve-form label {
+  display: grid;
+  gap: var(--s-2);
+  font-weight: 600;
+}
+
+.reserve-form input,
+.reserve-form select,
+.reserve-form textarea {
+  font: inherit;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: var(--white);
+}
+
+.reserve-form input:focus,
+.reserve-form select:focus,
+.reserve-form textarea:focus {
+  outline: 3px solid color-mix(in srgb, var(--cne-green) 60%, white);
+  outline-offset: 1px;
+}
+
+.reserve-form .full {
+  grid-column: 1 / -1;
+}
+
+.reserve-form {
+  grid-template-columns: 1fr;
+}
+
+.form-section {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: var(--s-5);
+  display: grid;
+  gap: var(--s-4);
+}
+
+.form-section legend {
+  padding: 0 var(--s-2);
+  font-weight: 700;
+  color: var(--cne-green-dark);
+}
+
+.payment-note {
+  font-weight: 600;
+  color: var(--cne-green-dark);
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  font-weight: 600;
+}
+
+.checkbox input {
+  width: 18px;
+  height: 18px;
+}
+
+@media (min-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1.2fr 0.8fr;
+  }
+
+  .grid-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .contact-card {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .reserve-form {
+    grid-template-columns: 1fr;
+  }
+
+  .steps-wrap {
+    grid-template-columns: 1fr auto;
+  }
+}
+.link-button {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--cne-green-dark);
+  text-decoration: underline;
+  font: inherit;
+  cursor: pointer;
+}
+
+.regulamento-text p,
+.regulamento-text ul {
+  margin: 0 0 var(--s-4);
+}

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Rede Acolhe – Agrupamento 48. Regulamento, regras e pedidos de reserva da sede." />
+  <title>Rede Acolhe – Agrupamento 48</title>
+
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/rede-acolhe.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css">
+</head>
+<body>
+  <header class="topbar" role="banner">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Agrupamento 48 – CNE">
+        <img src="assets/img/logo_oficial.png" alt="Agrupamento 48 – CNE" />
+      </a>
+      <div class="nav-actions">
+        <div class="social-links" aria-label="Redes sociais">
+          <a href="#" aria-label="Facebook"><i class="ri-facebook-fill" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Instagram"><i class="ri-instagram-line" aria-hidden="true"></i></a>
+          <a href="#" aria-label="YouTube"><i class="ri-youtube-fill" aria-hidden="true"></i></a>
+        </div>
+        <button class="burger" aria-label="Abrir menu" aria-controls="site-menu" aria-expanded="false" onclick="toggleMenu()">
+          <span class="burger-line" aria-hidden="true"></span>
+          <span class="burger-line" aria-hidden="true"></span>
+          <span class="burger-line" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+
+    <nav id="site-menu" class="menu" role="navigation" aria-label="Menu principal" aria-hidden="true">
+      <div class="container menu-inner">
+        <a data-link="comunidade" href="comunidade/santa-catarina.html">Comunidade</a>
+        <a data-link="atividades" href="atividades.html">Atividades</a>
+        <a data-link="programa" href="programa.html">Programa</a>
+        <a data-link="rede-acolhe" href="rede-acolhe.html">Rede Acolhe</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="site-main">
+    <section class="section page-hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge">Rede Acolhe</div>
+          <h1>Regulamento para utilização da sede</h1>
+          <p class="lead">
+            A sede exterior do Agrupamento 48 de Santa Catarina acolhe grupos escuteiros e outras associações,
+            permitindo conhecer Lisboa com acesso rápido a transportes e serviços essenciais.
+          </p>
+          <div class="hero-note">Reserva sujeita a confirmação do agrupamento.</div>
+        </div>
+        <div class="hero-card">
+          <h3>Localização estratégica</h3>
+          <ul>
+            <li>Metro, autocarro, elétrico, comboio e barco</li>
+            <li>Farmácias, supermercados e padarias</li>
+            <li>Tudo num raio de 500 metros</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint">
+      <div class="container">
+        <div class="section-header">
+          <h2>Espaços disponíveis</h2>
+          <p>Infraestruturas preparadas para acantonar e apoiar a estadia do grupo.</p>
+        </div>
+        <div class="grid-3">
+          <article class="card">
+            <h3>2 sedes</h3>
+            <p>Alcateia e Grupo Explorador para acantonarem.</p>
+          </article>
+          <article class="card">
+            <h3>Terraço com cozinha</h3>
+            <p>Fogão, frigorífico, lava-louças, tachos e utensílios para refeições.</p>
+          </article>
+          <article class="card">
+            <h3>Banhos e apoio</h3>
+            <p>2 sanitas, 1 urinol, 2 chuveiros, água quente e ecopontos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Como efetuar a reserva</h2>
+          <p>Processo simples, com prazos e confirmação por parte do agrupamento.</p>
+        </div>
+        <div class="steps-wrap">
+          <ol class="steps">
+            <li>Pedido através de formulário online.</li>
+            <li>Antecedência mínima de 20 dias.</li>
+            <li>Após confirmação, pagamento total até 5 dias antes do início da atividade.</li>
+            <li>Envio do comprovativo por e-mail para o endereço indicado.</li>
+            <li>O incumprimento dos prazos pode inviabilizar a reserva.</li>
+            <li>Haverá lugar a reembolso caso a atividade não se realize.</li>
+          </ol>
+          <div class="hero-actions steps-action">
+            <button class="btn btn-primary" type="button" data-modal-target="reserva-modal">Pedido de reserva</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint">
+      <div class="container">
+        <div class="section-header">
+          <h2>Tarifário</h2>
+          <p>Os valores podem ser atualizados anualmente.</p>
+        </div>
+        <div class="grid-2">
+          <article class="card pricing">
+            <h3>Escuteiros</h3>
+            <p class="price">1,5€</p>
+            <p>por noite / por elemento</p>
+          </article>
+          <article class="card pricing">
+            <h3>Não escuteiros</h3>
+            <p class="price">2,5€</p>
+            <p>por noite / por elemento</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Regras de utilização</h2>
+          <p>O cumprimento das regras é obrigatório. O incumprimento implica a saída imediata.</p>
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <h3>É expressamente proibido</h3>
+            <ul>
+              <li>Estacionar no pátio</li>
+              <li>Fumar na sede</li>
+              <li>Utilizar zonas interditas (ex: coro da igreja)</li>
+              <li>Consumir substâncias proibidas por lei</li>
+              <li>Animais (exceto cães-guia)</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Boas práticas</h3>
+            <ul>
+              <li>Limpeza da sede é da responsabilidade do grupo</li>
+              <li>Silêncio às 23:00 e alvorada às 07:30</li>
+              <li>Separação e transporte de resíduos para ecopontos</li>
+              <li>Vistoria final com elemento do agrupamento</li>
+              <li>Danos materiais devem ser reportados e liquidados</li>
+            </ul>
+          </div>
+        </div>
+        <div class="note">
+          Casos omissos serão resolvidos pela Direção do Agrupamento, à luz dos regulamentos do CNE e legislação nacional.
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint">
+      <div class="container">
+        <div class="section-header">
+          <h2>Contactos</h2>
+          <p>Para informações e reservas, entra em contacto com o Agrupamento 48.</p>
+        </div>
+        <div class="contact-card card">
+          <div>
+            <strong>E-mail</strong>
+            <p><a href="mailto:reservas@agrupamento48.pt">reservas@agrupamento48.pt</a></p>
+          </div>
+          <div>
+            <strong>Morada</strong>
+            <p>Igreja de Santa Catarina, Lisboa</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="reserva-modal" role="dialog" aria-modal="true" aria-labelledby="reserva-title" aria-hidden="true">
+    <div class="modal-backdrop" data-modal-close></div>
+    <div class="modal-content">
+      <button class="modal-close" type="button" data-modal-close aria-label="Fechar">×</button>
+      <div class="section-header">
+        <h2 id="reserva-title">Formulário de Reserva</h2>
+        <p>Preenche os dados do grupo. Responderemos com a confirmação e o IBAN para pagamento.</p>
+      </div>
+      <form class="reserve-form" action="#" method="post">
+        <fieldset class="form-section">
+          <legend>Identificação do Grupo</legend>
+          <label>
+            Agrupamento/Grupo
+            <input type="text" name="grupo" required />
+          </label>
+          <label>
+            Região
+            <input type="text" name="regiao" />
+          </label>
+          <label class="full">
+            Morada
+            <input type="text" name="morada" />
+          </label>
+          <label>
+            Localidade
+            <input type="text" name="localidade" />
+          </label>
+          <label>
+            Código Postal
+            <input type="text" name="codigo_postal" placeholder="0000-000" />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Responsável do Grupo
+            <input type="text" name="responsavel" required />
+          </label>
+          <label>
+            Telemóvel
+            <input type="tel" name="telemovel" />
+          </label>
+        </fieldset>
+
+        <fieldset class="form-section">
+          <legend>Dados da Atividade</legend>
+          <label>
+            Lobitos
+            <input type="number" name="lobitos" min="0" />
+          </label>
+          <label>
+            Exploradores
+            <input type="number" name="exploradores" min="0" />
+          </label>
+          <label>
+            Pioneiros
+            <input type="number" name="pioneiros" min="0" />
+          </label>
+          <label>
+            Caminheiros
+            <input type="number" name="caminheiros" min="0" />
+          </label>
+          <label>
+            Dirigentes
+            <input type="number" name="dirigentes" min="0" />
+          </label>
+          <label>
+            Nº total de elementos
+            <input type="number" name="total_elementos" min="1" required />
+          </label>
+          <label>
+            Data e hora da chegada
+            <input type="datetime-local" name="chegada" required />
+          </label>
+          <label>
+            Data e hora da saída
+            <input type="datetime-local" name="saida" required />
+          </label>
+          <label>
+            Nº de noites
+            <input type="number" name="noites" min="1" required />
+          </label>
+        </fieldset>
+
+        <fieldset class="form-section">
+          <legend>Dados para pagamento</legend>
+          <p class="payment-note">Caixa Geral de Depósitos</p>
+          <p><strong>IBAN:</strong> PT50003503960019843863082</p>
+          <p>Enviar comprovativo para: <a href="mailto:acantonamento48@gmail.com">acantonamento48@gmail.com</a></p>
+          <p><strong>Contactos:</strong></p>
+          <p>Ana Ruivo – 93 3989979</p>
+          <p>Elsa Martins – 96 012 58 91</p>
+        </fieldset>
+
+        <label class="full checkbox">
+          <input type="checkbox" name="regulamento" required />
+          Tomei conhecimento do
+          <button class="link-button" type="button" data-modal-target="regulamento-modal">regulamento</button>
+        </label>
+
+        <button class="btn btn-primary" type="submit">Enviar pedido</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal" id="regulamento-modal" role="dialog" aria-modal="true" aria-labelledby="regulamento-title" aria-hidden="true">
+    <div class="modal-backdrop" data-modal-close></div>
+    <div class="modal-content">
+      <button class="modal-close" type="button" data-modal-close aria-label="Fechar">×</button>
+      <div class="section-header">
+        <h2 id="regulamento-title">Regulamento Rede Acolhe</h2>
+        <p>Utilização da sede exterior do Agrupamento 48 de Santa Catarina.</p>
+      </div>
+      <div class="regulamento-text">
+        <p>A finalidade da disponibilidade da sede exterior do Agrupamento 48 de Santa Catarina é a de permitir a grupos escuteiros e a outros grupos/associações conhecerem melhor a cidade de Lisboa, devido à localização do Agrupamento. Estamos perto de transportes públicos (metro, autocarro, elétrico, comboio e barco), farmácias, supermercados e padarias, num raio de 500 metros.</p>
+        <p><strong>Espaços:</strong> 2 sedes (Alcateia e Grupo Explorador), 1 terraço com cozinha equipada, casa-de-banho com 2 sanitas, 1 urinol e 2 chuveiros, água quente para banhos e ecopontos.</p>
+        <p><strong>Reservas:</strong> pedido através de formulário online; antecedência mínima de 20 dias; após confirmação, depósito do valor total até 5 dias antes; envio de comprovativo por e-mail; incumprimento dos prazos pode inviabilizar a reserva; haverá reembolso se a atividade não se realizar.</p>
+        <p><strong>Seguros:</strong> responsabilidade do grupo visitante (não aplicável a associações escutistas em atividade).</p>
+        <p><strong>Tarifário:</strong> 1,5€ / noite / elemento (escuteiros) e 2,5€ / noite / elemento (não escuteiros). Valores podem ser atualizados anualmente.</p>
+        <p><strong>Regras de utilização:</strong></p>
+        <ul>
+          <li>É proibido estacionar no pátio, fumar na sede, utilizar zonas interditas (ex.: coro da igreja), consumir substâncias proibidas e trazer animais (exceto cães‑guia).</li>
+          <li>Recomenda-se a não ingestão de bebidas alcoólicas por adultos na presença de menores.</li>
+          <li>A limpeza da sede é responsabilidade dos utilizadores; deve ficar melhor do que foi encontrada.</li>
+          <li>Silêncio às 23:00 e alvorada às 07:30.</li>
+          <li>Recolha e transporte de resíduos para contentores apropriados; separação de resíduos e ecopontos sempre que possível.</li>
+          <li>Vistoria final com elemento do Agrupamento; danos materiais devem ser reportados e liquidados.</li>
+        </ul>
+        <p>O não cumprimento das regras implica a saída imediata do grupo. Em caso de reincidência, o grupo não será mais aceite. Casos omissos serão resolvidos em Reunião de Direção do Agrupamento, à luz do Regulamento de Justiça e Regulamento Geral do CNE, e legislação nacional em vigor.</p>
+        <p>Sempre Alerta Para Servir,</p>
+        <p>A Direção do Agrupamento 48 Santa Catarina</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="grid-3">
+        <div>
+          <strong>Agrupamento 48 – CNE</strong>
+          <div class="small">Santa Catarina • Misericórdia</div>
+        </div>
+        <div>
+          <div class="small">E-mail: <a href="mailto:geral@exemplo.pt">geral@exemplo.pt</a></div>
+          <div class="small">Morada: Igreja de Santa Catarina, Setúbal</div>
+        </div>
+        <div class="small">© <span id="y"></span> Agrupamento 48. Todos os direitos reservados.<br />Política de Privacidade • Cookies</div>
+      </div>
+    </div>
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

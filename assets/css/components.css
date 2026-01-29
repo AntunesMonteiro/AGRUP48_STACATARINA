@@ -1,0 +1,68 @@
+/* assets/css/components.css */
+
+/* Botão principal (verde CNE) */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--s-2);
+    padding: 12px 16px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform var(--t), box-shadow var(--t), background var(--t), border-color var(--t);
+  }
+  
+  .btn-primary {
+    background: var(--cne-green);
+    color: var(--white);
+  }
+.btn-primary:hover {
+    background: var(--cne-green-dark);
+    box-shadow: var(--shadow-sm);
+    transform: translateY(-1px);
+    text-decoration: none;
+  }
+  
+  .btn-outline {
+    background: transparent;
+    border-color: color-mix(in srgb, var(--cne-green) 50%, white);
+    color: var(--cne-green-dark);
+  }
+  .btn-outline:hover {
+    border-color: var(--cne-green);
+    box-shadow: var(--shadow-sm);
+    transform: translateY(-1px);
+  }
+  
+  /* Card base */
+  .card {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: var(--s-5);
+    box-shadow: var(--shadow-sm);
+  }
+  
+  /* Secções */
+  .section {
+    padding: var(--s-8) 0;
+  }
+  .section--tint {
+    background: color-mix(in srgb, var(--cne-cream) 35%, white);
+  }
+  
+  /* Badge / etiqueta */
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--s-2);
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--cne-green) 12%, white);
+    color: var(--cne-green-dark);
+    font-weight: 600;
+    font-size: var(--fs-400);
+  }
+  
